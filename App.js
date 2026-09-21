@@ -38,6 +38,7 @@ const styles=StyleSheet.create({
     padding:20,
     margin:10,
     backgroundColor:'red',
+    flex:1,
     flexDirection:'row',
     justifyContent:'space-between',
     alignItems:'flex-end'
