@@ -339,57 +339,62 @@ import { Text, View, TextInput, Button, StyleSheet } from "react-native";
 // });
 
 // export default App;
+//Task 2
+// function App(){
+//   const [Name,setName]=useState('')
+//   const [txtName,setTxtName]=useState('')
 
-function App(){
-  const [Name,setName]=useState('')
-  const [txtName,setTxtName]=useState('')
-
-  const onClick=()=>{
-    setName(txtName)
-  }
-  return(
-    <View style={styles.main}>
-      <View style={{color:'black',justifyContent:'center',alignItems:'center',height:'15%',backgroundColor:'blue'}}>
-        <Text style={{marginTop:100}}>Test Codes</Text>
-      </View>
-      <View style={[styles.input,{justifyContent:'center',alignItems:'center',width:'100%',height:'40%'}]}>
-        <Text style={{color:'black'}}>Pakistan Zindabad</Text>
-        <View style={{margin:'10',fontSize:'30',backgroundColor:'white'}}>
-          <TextInput placeholder="Enter Name" onChangeText={setTxtName}/>
-        </View>
-        <View>
-          <Text style={{color:'black'}}>Welcome: {Name}</Text>
-        </View>
-      </View>
+//   const onClick=()=>{
+//     setName(txtName)
+//   }
+//   return(
+//     <View style={styles.main}>
+//       <View style={{color:'black',justifyContent:'center',alignItems:'center',height:'15%',backgroundColor:'blue'}}>
+//         <Text style={{marginTop:100}}>Test Codes</Text>
+//       </View>
+//       <View style={[styles.input,{justifyContent:'center',alignItems:'center',width:'100%',height:'40%'}]}>
+//         <Text style={{color:'black'}}>Pakistan Zindabad</Text>
+//         <View style={{margin:'10',fontSize:'30',backgroundColor:'white'}}>
+//           <TextInput placeholder="Enter Name" onChangeText={setTxtName}/>
+//         </View>
+//         <View>
+//           <Text style={{color:'black'}}>Welcome: {Name}</Text>
+//         </View>
+//       </View>
      
-      <View style={[styles.btn,{margin:10}]}>
-        <Button title="Click here" onPress={onClick}/>
-      </View>
-    </View>
+//       <View style={[styles.btn,{margin:10}]}>
+//         <Button title="Click here" onPress={onClick}/>
+//       </View>
+//     </View>
+//   );
+// }
+// export default App
+
+// let styles=StyleSheet.create({
+//   main:{
+//     flex:1
+//   },
+//   Headers:{
+//     backgroundColor:'blue',
+//     width:'100%',
+//     height:'15%',
+//   },
+//   headerText:{
+//     color:'black',
+//     justifyContent:'center',
+//     alignContent:'center'
+//   },
+//   input:{
+//     backgroundColor:'#07f389',
+//   },
+//   btn:{
+//     alignSelf:'center',
+
+//   }
+
+// })
+export function App(){
+  return(
+    
   );
 }
-export default App
-
-let styles=StyleSheet.create({
-  main:{
-    flex:1
-  },
-  Headers:{
-    backgroundColor:'blue',
-    width:'100%',
-    height:'15%',
-  },
-  headerText:{
-    color:'black',
-    justifyContent:'center',
-    alignContent:'center'
-  },
-  input:{
-    backgroundColor:'#07f389',
-  },
-  btn:{
-    alignSelf:'center',
-
-  }
-
-})
